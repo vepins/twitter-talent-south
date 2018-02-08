@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   root 'epicenter#feed'
+  
+  get 'all_users' => 'epicenter#all_users'
+  
+  get 'following' => 'epicenter#following'
+  
+  get 'followers' => 'epicenter#followers'
 
   get 'show_user' => 'epicenter#show_user'
 
